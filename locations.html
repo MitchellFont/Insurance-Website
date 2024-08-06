@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Locations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locations-page">
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/GIG-logo-1.png" alt="Green Insurance Group logo" class="logo">
+            </a>
+            <nav>
+                <div class="navbar">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="locations.html">Locations</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="locations-container">
+        <h1>Our Locations</h1>
+        <div class="location-grid">
+            <div class="location-item">
+                <h2>Mcallen</h2>
+                <a href="mcallen.html"><img src="assets/mcallen_office.jpeg" alt="Mcallen Office"></a>
+                <button onclick="location.href='mcallen.html'">Request a Quote</button><br>
+                <button onclick="window.location.href='https://www.google.com/maps/place/321+W+Nolana+Ave,+McAllen,+TX+78504'">Get Directions</button>
+            </div>
+            <div class="location-item">
+                <h2>Harlingen</h2>
+                <a href="harlingen.html"><img src="assets/harlingen_office.jpeg" alt="Harlingen Office"></a>
+                <button onclick="location.href='harlingen.html'">Request a Quote</button><br>
+                <button onclick="window.location.href='https://www.google.com/maps/place/1601+S+77+Sunshine+Strip+Suite+A,+Harlingen,+TX+78550'">Get Directions</button>
+            </div>
+            <div class="location-item">
+                <h2>La Feria</h2>
+                <a href="laferia.html"><img src="assets/laferia_office.jpg" alt="La Feria Office"></a>
+                <button onclick="location.href='laferia.html'">Request a Quote</button><br>
+                <button onclick="window.location.href='https://www.google.com/maps/place/605+N+Main+St,+La+Feria,+TX+78559'">Get Directions</button>
+            </div>
+            <div class="location-item last-item">
+                <h2>San Benito</h2>
+                <a href="sanbenito.html"><img src="assets/sanbenito_office.jpeg" alt="San Benito Office"></a>
+                <button onclick="location.href='sanbenito.html'">Request a Quote</button><br>
+                <button onclick="window.location.href='https://www.google.com/maps/place/2395+La+Palma+St,+Suite+E,+San+Benito,+TX+78586'">Get Directions</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button id="en-btn">English</button>
+        <button id="es-btn">Español</button>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Green Insurance Group</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/GIGTEXAS/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <!-- Add more social media icons here -->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

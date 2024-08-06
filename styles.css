@@ -1,0 +1,447 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2em 1em; /* Add padding around the main content */
+}
+
+/* Specific Styles for Services Page */
+.services-content {
+  padding: 2.5em 1em;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.services-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.services-content p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+header {
+  background-color: #333; /* Dark grey background */
+  color: white;
+  padding: 1em 0; /* Space around the header content */
+}
+
+header .container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Distribute space between logo and navbar */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  height: 70px; /* Size of the logo */
+}
+
+nav {
+  flex: 1; /* Allows nav to take up remaining space */
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-left: 150px; /* Move navbar closer to the logo */
+  margin-top: 30px; /* Move navbar down */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1.2em; /* Increase font size */
+  margin: 0 10px; /* Space between navbar items */
+}
+
+.navbar a:hover {
+  background-color: #555; /* Slightly lighter grey on hover */
+}
+
+/* Content Container */
+.content-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px; /* Reduce the padding on the outsides */
+}
+
+.location-info {
+  width: 48%; /* Increase the width */
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-info img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-container {
+  width: 48%; /* Increase the width */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 100%; /* Allow form to take full width */
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px; /* Add space between checkboxes */
+}
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for the first row */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.checkbox-container.row-2 {
+  grid-template-columns: repeat(3, 1fr); /* Three columns for the second row */
+}
+
+.checkbox-container.row-3 {
+  grid-template-columns: repeat(3, 1fr); /* Three columns for the third row */
+}
+
+/* General button styles */
+button {
+  background-color: #555; /* Dark background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 0.75em 1.5em; /* Adjust padding */
+  font-size: 1em; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  margin: 0.5em 0; /* Space between buttons and other elements */
+}
+
+button:hover {
+  background-color: #555; /* Lighter background color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+  background-color: #222; /* Darker background color on click */
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Locations Container Styles */
+.locations-container {
+  padding: 2em 1em;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.locations-container h1 {
+  margin-bottom: 1.5em;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.location-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em; /* Space between items */
+  justify-content: center; /* Center items horizontally */
+}
+
+.location-item {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set width */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-item h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.location-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.location-item a {
+  display: block;
+  margin: 0.5em 0;
+  text-decoration: none;
+  color: #007bff; /* Use a primary color */
+  font-size: 1em;
+}
+
+.location-item a:hover {
+  text-decoration: underline;
+}
+
+.location-item .last-item {
+  margin-bottom: 0; /* Remove margin for the last item */
+}
+
+/* Language Selector Styles */
+.language-selector {
+  position: fixed;
+  top: 10px; /* Adjusted as needed */
+  right: 10px;
+  background-color: #333;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  gap: 0.5em; /* Space between buttons */
+}
+
+.language-selector button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.language-selector button:hover {
+  background-color: #777;
+}
+
+
+/* Footer Styles */
+footer {
+  text-align: left;
+  font-size: small;
+  padding: 1em;
+  background-color: #333; /* Dark grey background */
+  color: white;
+  margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-info, .form-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .navbar {
+    flex-direction: row;
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-top: 0; /* Remove top margin on smaller screens */
+  }
+
+  .navbar a {
+    padding: 1em;
+    text-align: center;
+    font-size: 1em; /* Adjust font size for smaller screens */
+    margin: 0.5em; /* Space between navbar items */
+  }
+
+  /* Hero Section Styles */
+  .hero {
+    background: #333; /* Dark background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 5em 1em; /* Add padding around the hero section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 1em auto; /* Center the hero section with margin */
+    max-width: 900px; /* Max width for better layout */
+  }
+
+  .hero h1 {
+    font-size: 2.5em; /* Larger font size for the main heading */
+    margin-bottom: 0.5em; /* Space below the heading */
+  }
+
+  .hero p {
+    font-size: 1.2em; /* Slightly larger font size for the subheading */
+    margin-bottom: 1em; /* Space below the paragraph */
+  }
+
+  #quote-btn {
+    padding: 1em 2em; /* Increase padding for the button */
+    font-size: 1.2em; /* Increase font size */
+    color: white; /* White text color */
+    background-color: #555; /* Dark grey background */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+
+  #quote-btn:hover {
+    background-color: #777; /* Lighter grey on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+
+  #quote-btn:active {
+    background-color: #444; /* Darker grey on click */
+    transform: translateY(0); /* Reset lift effect */
+    }
+
+/* Features Section Styles */
+  .features { 
+  background-color: #f4f4f4; /* Light background color */
+  padding: 2em 1em; /* Add padding around the section */
+  text-align: center; /* Center-align text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 900px; /* Max width for better layout */
+  margin: 1em auto; /* Center the features section with margin */
+  }
+
+  .features h2 {  
+  font-size: 2em; /* Larger font size for the heading */
+  margin-bottom: 1em; /* Space below the heading */
+  }
+
+  .features ul {  
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove padding */
+  }
+
+  .features li {  
+  font-size: 1.2em; /* Font size for list items */
+  margin: 1em 0; /* Space between list items */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  }
+
+  .features li i {  
+  margin-right: 0.5em; /* Space between icon and text */
+  color: #333; /* Icon color */
+  }
+
+  .checkbox-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+
+  .checkbox-container.row-2, .checkbox-container.row-3 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .locations-container {
+    padding: 2em 0.5em; /* Adjust padding for smaller screens */
+  }
+
+  .location-grid {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 1em; /* Reduced gap */
+  }
+
+  .location-item {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  button {
+    width: 100%; /* Full width on smaller screens */
+    margin: 0.5em 0; /* Ensure spacing is consistent */
+  }
+
+  header .container {
+    padding-top: 60px; /* Ensure enough padding to prevent overlap */
+  }
+
+  .language-selector {
+    top: 10px; /* Maintain position from top */
+    right: 10px; /* Maintain position from right */
+    flex-direction: row; /* Ensure buttons are side by side */
+    padding: 0.5em; /* Adjust padding for mobile */
+  }
+
+  .language-selector a {
+    padding: 0.5em; /* Adjust padding for mobile */
+    font-size: 0.9em; /* Slightly smaller font size for mobile */
+  }
+
+  main h1 {
+    font-size: 2em;
+  }
+
+  main p {
+    font-size: 1em;
+  }
+
+}

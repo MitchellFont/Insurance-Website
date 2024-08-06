@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location 1 Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/GIG-logo-1.png" alt="Green Insurance Group logo" class="logo">
+            <nav>
+                <div class="navbar">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="locations.html">Locations</a>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <div class="content-container">
+        <div class="location-info">
+            <img width="300px" src="assets/brownsville_office.jpeg" alt="Brownsville location">
+            <h1>Brownsville Office</h1>
+            <p>Address: 57 Hannah Dr., Unit D1
+                Brownsville, TX 78520</p>
+            <br>
+            <p>Hours: Monday-Friday 9AM-6PM</p>
+            <p>Saturday: 9AM-1PM</p>
+            <p>Sunday: Closed</p>
+            <p>Phone: (956) 443-6106</p>
+            <br>
+            <button onclick="window.location.href='tel:+19564436106'">Call Today</button>
+            <button onclick="window.location.href='https://www.google.com/maps/place/57+Hannah+Dr,+Unit+D1,+Brownsville,+TX+78520'">Get Directions</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.332298428584!2d-97.52163840000001!3d25.989929900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866f97d3db138b15%3A0x512ef23f40777433!2sGreen%20Insurance%20Group!5e0!3m2!1sen!2sus!4v1722883416563!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="form-container">
+            <h2>Request a Quote</h2>
+            <form action="#" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address (optional):</label>
+                <input type="text" id="address" name="address">
+
+                <h2>Services Requested:</h2>
+
+                <div class="checkbox-container">
+                    <label for="auto">Auto:
+                        <input type="checkbox" id="auto" name="insuranceTypes[]">
+                    </label>
+
+                    <label for="home">Home:
+                        <input type="checkbox" id="home" name="insuranceTypes   []">
+                    </label>
+
+                    <label for="life-health">Life/Health:
+                        <input type="checkbox" id="life-health"     name="insuranceTypes[]">
+                    </label>
+
+                    <label for="commercial">Commercial:
+                        <input type="checkbox" id="commercial"  name="insuranceTypes[]">
+                    </label>
+                </div>
+
+                <div class="checkbox-container row-2">
+                    <label for="watercraft">Watercraft:
+                        <input type="checkbox" id="watercraft" name="insuranceTypes[]">
+                    </label>
+    
+                    <label for="travel-trailer">Travel Trailer:
+                        <input type="checkbox" id="travel-trailer" name="insuranceTypes[]">
+                    </label>
+    
+                    <label for="motorcycle">Motorcycle:
+                        <input type="checkbox" id="motorcycle" name="insuranceTypes[]">
+                    </label>
+                </div>
+                
+                <div class="checkbox-container row-3">
+                    <label for="business-auto">Business Auto:
+                        <input type="checkbox" id="business-auto" name="insuranceTypes[]">
+                    </label>
+    
+                    <label for="renters">Renters:
+                        <input type="checkbox" id="renters" name="insuranceTypes[]">
+                    </label>
+    
+                    <label for="mexico-tourist">Mexico Tourist:
+                        <input type="checkbox" id="mexico-tourist" name="insuranceTypes[]">
+                    </label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Green Insurance Group</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/GIGTEXAS/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <!-- Add more social media icons here -->
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
