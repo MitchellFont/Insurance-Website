@@ -1,3 +1,4 @@
+// Add event listener to quote button
 document.addEventListener('DOMContentLoaded', () => {
     const enButton = document.getElementById('en-btn');
     const esButton = document.getElementById('es-btn');
@@ -7,40 +8,40 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLanguage(language);
 
     // Event listeners for buttons
-    enButton.addEventListener('click', () => {
+    enButton?.addEventListener('click', () => {
         updateLanguage('en');
         localStorage.setItem('language', 'en');
     });
 
-    esButton.addEventListener('click', () => {
+    esButton?.addEventListener('click', () => {
         updateLanguage('es');
         localStorage.setItem('language', 'es');
     });
 
     function updateLanguage(lang) {
-        // Common elements
-        const navLinks = document.querySelectorAll('.navbar a');
-        const footerSocial = document.querySelector('.social-media');
-        
         // Update navigation links
+        const navLinks = document.querySelectorAll('.navbar a');
         navLinks.forEach(link => {
-            switch (link.textContent) {
-                case 'Home':
+            switch (link.href) {
+                case new URL('index.html', location.href).href:
                     link.textContent = lang === 'en' ? 'Home' : 'Inicio';
                     break;
-                case 'Services':
+                case new URL('services.html', location.href).href:
                     link.textContent = lang === 'en' ? 'Services' : 'Servicios';
                     break;
-                case 'Locations':
+                case new URL('locations.html', location.href).href:
                     link.textContent = lang === 'en' ? 'Locations' : 'Ubicaciones';
                     break;
             }
         });
 
-        // Update footer social media links (if needed)
-        // Assuming you want to translate social media labels
-        // Example: footerSocial.querySelector('.social-icon')...
+        // Update footer if needed
+        const footer = document.querySelector('footer p');
+        if (footer) {
+            footer.textContent = lang === 'en' ? '© 2024 Green Insurance Group' : '© 2024 Grupo de Seguros Verde';
+        }
 
+        // Update page content based on the current page
         if (document.body.classList.contains('index-page')) {
             // Index page content
             if (lang === 'en') {
